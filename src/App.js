@@ -4,7 +4,16 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+interface MyType {
+  what?: string;
+}
+
+var status: MyType = {};
+console.log(status);
+
 class App extends Component {
+  state: MyType = {};
   render() {
     return (
       <div className="App">
